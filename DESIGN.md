@@ -57,10 +57,10 @@ The portfolio should feel like a carefully typeset product field guide: a Swiss 
 - **Locale and language policy:** English only for this release.
 - **Usage scene:** Quick review on laptop or mobile, followed by deeper project scanning on larger screens.
 - **Register:** Brand/editorial marketing site.
-- **Memorable signature:** A cobalt “working edge” carries factual metadata and the curated order of selected work.
+- **Memorable signature:** A cobalt “working edge” carries factual metadata and the curated order of selected work; each project pairs desktop and mobile interface concepts in a precise side-by-side device plate.
 - **Restraint:** Cobalt is sparse, project numbering is meaningful, and decorative elements never compete with the work.
 - **Anti-references:** No SaaS navigation, fake terminal, sticker collage, rounded card grid, gradient blob, acid-yellow brutalism, or arbitrary rotation.
-- **Token ownership/runtime mapping:** `app/globals.css` is the canonical runtime source. This file mirrors its accepted values and rationale. `colors.primary` maps to the runtime `--accent` variable; other color names map one-to-one. CSS custom properties feed all page components directly.
+- **Token ownership/runtime mapping:** `app/globals.css` is the canonical runtime source. This file mirrors its accepted values and rationale. `colors.primary` maps to the runtime `--accent` variable; other color names map one-to-one. CSS custom properties feed Tailwind utilities directly; component layout and presentation live in JSX `className` values, while CSS is reserved for document-wide behavior and keyframes.
 
 ## Colors
 
@@ -106,11 +106,11 @@ Only simple inline arrow SVGs are used. They inherit the current text color and 
 
 ### Motion
 
-Motion is quick and physical: underline growth, one-pixel translation, and a progressive CSS view reveal when supported. `prefers-reduced-motion` removes scrolling and reveal animation.
+Motion is quick and physical: underline growth, one-pixel translation, and one-time scroll sequences powered by Motion. Section headings assemble in short cascades; project rails, media, device frames, copy, and metadata arrive with distinct but coordinated movement. `prefers-reduced-motion` removes scrolling, reveal, depth, and floating animation.
 
 ### Content and data visualization
 
-Copy is direct, specific, and conversational. Code-native project visuals summarize real product workflows without presenting fabricated screenshots or metrics.
+Copy is direct, specific, and conversational. Code-native project visuals summarize real product workflows without presenting fabricated screenshots or metrics. Selected-work visuals use a square desktop browser plate and a compact mobile frame with a clear three-quarter perspective, a cobalt offset layer, and restrained vertical motion. Both remain fully visible in a shared, neutral presentation field; neither device overlaps the other.
 
 ## Do's and Don'ts
 
