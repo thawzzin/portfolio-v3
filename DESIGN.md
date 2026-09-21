@@ -116,7 +116,7 @@ Motion is quick and physical: underline growth, one-pixel translation, and one-t
 
 Copy is direct, specific, and conversational. The personal portrait keeps its natural color against the cool, restrained palette. Code-native project visuals summarize real product workflows without presenting fabricated screenshots or metrics. Selected-work visuals use a square desktop browser plate and a compact mobile frame with a clear three-quarter perspective, a steel-blue offset layer, and restrained vertical motion. Both remain fully visible in a shared, neutral presentation field; neither device overlaps the other.
 
-Testimonials use an editorial three-column quote ledger with visible attribution. When portrait assets are unavailable, compact initial blocks preserve layout stability without presenting invented imagery.
+Testimonials use a manually controlled editorial carousel with visible attribution, position count, numbered slide controls, and previous/next buttons. There is no auto-rotation; keyboard arrows and reduced-motion preferences remain safe by default. When portrait assets are unavailable, compact initial blocks preserve layout stability without presenting invented imagery.
 
 ## Do's and Don'ts
 
