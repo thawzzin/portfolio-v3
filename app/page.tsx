@@ -5,6 +5,7 @@ import {
   experiences,
   projects,
   stackGroups,
+  testimonials,
   type Project,
 } from "./portfolio-data";
 
@@ -40,7 +41,7 @@ function ProjectShowcase({ project, reverse }: { project: Project; reverse: bool
   const copyPosition = reverse ? "col-start-1 col-end-5 pr-[clamp(1.25rem,3vw,3rem)]" : "col-start-9 col-end-13 pl-[clamp(1.25rem,3vw,3rem)]";
 
   return (
-    <article className="grid min-w-0 grid-cols-12 grid-rows-[auto_1fr] max-[56rem]:grid-cols-[2.4rem_1fr] max-[56rem]:grid-rows-[auto_auto]" data-motion-project>
+    <article className="grid min-w-0 grid-cols-12 grid-rows-[auto_1fr] max-[56rem]:grid-cols-[2.4rem_1fr] max-[56rem]:grid-rows-[auto_auto]" data-motion-project data-motion-reverse={reverse ? "true" : undefined}>
       <div className={`row-start-1 row-end-3 flex min-w-0 flex-col justify-between border border-[var(--foreground)] bg-[var(--accent)] p-3 font-mono text-[var(--inverse)] uppercase max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:row-start-1 max-[56rem]:row-end-3 ${indexPosition}`} data-motion="project-index" aria-label={`Project ${project.number}`}>
         <span className="text-[clamp(1.6rem,3vw,3.5rem)] leading-none max-[56rem]:text-[1.15rem]">{project.number}</span>
         <p className="rotate-180 text-[0.6rem] tracking-[0.06em] [writing-mode:vertical-rl]">Selected work</p>
@@ -136,6 +137,34 @@ export default function Home() {
                 <li className="grid grid-cols-[2rem_1fr] gap-2 border-t border-[var(--rule)] py-[0.55rem] text-[clamp(0.9rem,1.2vw,1.1rem)] last:border-b" key={capability}><span className="font-mono text-[0.62rem] text-[var(--accent)]">{String(index + 1).padStart(2, "0")}</span>{capability}</li>
               ))}</ol>
             </div>
+          </div>
+        </section>
+
+        <section className={`${contentWidthClass} ${sectionPaddingClass} border-t border-[var(--foreground)]`} id="testimonials" aria-labelledby="testimonials-title">
+          <div className="mb-[clamp(3rem,7vw,7rem)] grid grid-cols-12 items-end max-[56rem]:grid-cols-1 max-[56rem]:gap-6" data-motion-group>
+            <SectionLabel className="col-start-1 col-end-3 max-[56rem]:col-start-1 max-[56rem]:col-end-2" index="T">From the team</SectionLabel>
+            <h2 className={`${sectionTitleClass} col-start-3 col-end-11 min-w-0 max-[56rem]:col-start-1 max-[56rem]:col-end-2`} id="testimonials-title" data-motion="heading">What collaborators say.</h2>
+          </div>
+          <div className="grid grid-cols-3 border-t border-[var(--foreground)] max-[56rem]:grid-cols-1">
+            {testimonials.map((testimonial, index) => {
+              const initials = testimonial.name.split(" ").map((part) => part[0]).join("").slice(0, 2);
+
+              return (
+                <figure className="flex min-w-0 flex-col border-r border-[var(--rule)] px-[clamp(1rem,2.5vw,2.5rem)] py-[clamp(1.5rem,3vw,3rem)] first:pl-0 last:border-r-0 last:pr-0 max-[56rem]:border-r-0 max-[56rem]:border-b max-[56rem]:px-0 max-[56rem]:last:border-b-0" key={testimonial.name} data-motion-row data-motion-delay={index * 0.08}>
+                  <span className="font-display text-[clamp(2.5rem,5vw,5rem)] leading-[0.7] text-[var(--accent)]" aria-hidden="true">“</span>
+                  <blockquote className="mt-6 mb-[clamp(2rem,4vw,4rem)] text-[clamp(1rem,1.35vw,1.25rem)] leading-[1.55] text-[var(--foreground)]">
+                    <p>{testimonial.quote}</p>
+                  </blockquote>
+                  <figcaption className="mt-auto flex items-center gap-3 border-t border-[var(--rule)] pt-4">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[2px] border border-[var(--foreground)] bg-[var(--accent)] font-mono text-[0.65rem] text-[var(--inverse)]" aria-hidden="true">{initials}</span>
+                    <span className="flex flex-col">
+                      <strong className="text-sm font-[650]">{testimonial.name}</strong>
+                      <span className="font-mono text-[0.65rem] tracking-[0.04em] text-[var(--muted)] uppercase">{testimonial.designation}</span>
+                    </span>
+                  </figcaption>
+                </figure>
+              );
+            })}
           </div>
         </section>
 

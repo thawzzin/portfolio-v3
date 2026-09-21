@@ -45,7 +45,7 @@ export function ScrollMotion() {
       inView(
         "[data-motion-project]",
         (project) => {
-          const reverse = project.classList.contains("project--reverse");
+          const reverse = project.hasAttribute("data-motion-reverse");
           const index = project.querySelector("[data-motion='project-index']");
           const media = project.querySelector("[data-motion='project-media']");
           const copy = project.querySelector("[data-motion='project-copy']");
