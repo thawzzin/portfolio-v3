@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f2f0e9;
-  --surface: #f8f6ef;
-  --foreground: #151515;
-  --muted: #68665f;
-  --rule: #b8b4aa;
-  --accent: #2457d6;
-  --inverse: #f8f6ef;
+  --background: #f1f4f6;
+  --surface: #f8fafb;
+  --surface-strong: #d3dde4;
+  --foreground: #0d1b2a;
+  --muted: #536475;
+  --rule: #aab7c2;
+  --accent: #274c67;
+  --accent-hover: #356f95;
+  --inverse: #f8fafc;
+  --inverse-muted: #c1ccd5;
+  --inverse-rule: #405263;
   --page-gutter: clamp(1rem, 3vw, 3rem);
   --section-gap: clamp(5rem, 11vw, 10rem);
   --content-max: 112rem;
@@ -18,11 +22,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-rule: var(--rule);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-inverse: var(--inverse);
+  --color-inverse-muted: var(--inverse-muted);
+  --color-inverse-rule: var(--inverse-rule);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
   --font-mono: var(--mono);

@@ -67,7 +67,7 @@ function DesktopItemCard({ label, name, detail, accent = false }: { label: strin
 function JackVisual() {
   return (
     <div className={`${desktopVisualClass} grid grid-cols-[0.55fr_2fr_0.7fr]`}>
-      <div className="flex flex-col gap-5 border-r border-[var(--foreground)] bg-[#d6d1c5] p-[clamp(0.7rem,1.5vw,1.5rem)] [&>span]:font-mono [&>span]:text-[clamp(0.35rem,0.55vw,0.55rem)] [&>span]:[writing-mode:vertical-rl]">
+      <div className="flex flex-col gap-5 border-r border-[var(--foreground)] bg-[var(--surface-strong)] p-[clamp(0.7rem,1.5vw,1.5rem)] [&>span]:font-mono [&>span]:text-[clamp(0.35rem,0.55vw,0.55rem)] [&>span]:[writing-mode:vertical-rl]">
         <strong className="mb-auto font-display text-[clamp(0.8rem,1.6vw,1.5rem)]">J/SG</strong>
         <span>DISCOVER</span><span>SAVED</span><span>APPLIED</span>
       </div>
@@ -239,7 +239,7 @@ export function ProjectVisual({ slug, title }: ProjectVisualProps) {
         aria-hidden="true"
       >
         <div className="relative aspect-[4/3] w-full border border-[var(--foreground)] bg-[var(--foreground)]" data-motion-device="desktop">
-          <div className="grid h-[8.5%] min-h-[1.3rem] grid-cols-[1fr_3fr_1fr] items-center border-b border-[var(--foreground)] bg-[#d6d1c5] px-[clamp(0.35rem,1vw,0.8rem)] font-mono text-[clamp(0.32rem,0.55vw,0.52rem)] uppercase">
+          <div className="grid h-[8.5%] min-h-[1.3rem] grid-cols-[1fr_3fr_1fr] items-center border-b border-[var(--foreground)] bg-[var(--surface-strong)] px-[clamp(0.35rem,1vw,0.8rem)] font-mono text-[clamp(0.32rem,0.55vw,0.52rem)] uppercase">
             <div className="flex gap-[clamp(0.18rem,0.45vw,0.35rem)] [&_i]:aspect-square [&_i]:w-[clamp(0.24rem,0.45vw,0.4rem)] [&_i]:rounded-full [&_i]:border [&_i]:border-current [&_i:first-child]:bg-[var(--accent)]"><i /><i /><i /></div>
             <span className="w-[min(100%,13rem)] justify-self-center overflow-hidden border border-[color-mix(in_srgb,var(--foreground)_45%,transparent)] px-2 py-[0.18rem] text-center text-ellipsis whitespace-nowrap">{slug.replaceAll("-", "")}.product</span>
             <b className="justify-self-end text-[1.2em]">+</b>
