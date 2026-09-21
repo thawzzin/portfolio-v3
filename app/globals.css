@@ -65,6 +65,36 @@ a:focus-visible {
   :root { --header-height: 5.9rem; }
 }
 
+@media (min-width: 56.001rem) {
+  .hero {
+    min-height: calc(100svh - var(--header-height));
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    padding-top: clamp(1.5rem, 3.8svh, 3rem);
+    padding-bottom: clamp(1.5rem, 3svh, 2.5rem);
+  }
+
+  .hero__title {
+    font-size: clamp(5rem, min(15.2vw, 23svh), 16.75rem);
+  }
+
+  .hero__statement {
+    padding-top: clamp(1.5rem, 3svh, 3rem);
+  }
+
+  .hero__aside {
+    gap: clamp(1rem, 2svh, 2rem);
+    padding-top: clamp(1.5rem, 3svh, 3rem);
+  }
+
+  .hero__portrait {
+    width: clamp(5.5rem, min(9vw, 13svh), 9rem);
+  }
+
+  .hero__tags {
+    margin-top: clamp(1.5rem, 3svh, 3rem);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {

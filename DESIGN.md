@@ -72,7 +72,7 @@ Archivo Black is reserved for the name, project titles, and the contact climax. 
 
 ## Layout
 
-Desktop layouts use a twelve-column grid inside a `112rem` maximum canvas. The cobalt working edge occupies a narrow factual column rather than floating as decoration. Project layouts alternate only to improve pacing. Below `56rem`, compositions become purpose-built single-column spreads, with metadata promoted above supporting copy. Anchor targets reserve space for the sticky header.
+Desktop layouts use a twelve-column grid inside a `112rem` maximum canvas. The cobalt working edge occupies a narrow factual column rather than floating as decoration. The opening hero fits its complete name, portrait, introduction, CTA, and capability index inside the available small viewport at desktop widths, while short screens may grow rather than clip content. Project layouts alternate only to improve pacing. Below `56rem`, compositions become purpose-built single-column spreads, with metadata promoted above supporting copy. Anchor targets reserve space for the sticky header.
 
 ## Elevation & Depth
 
