@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProjectVisual } from "./project-visual";
 import { ScrollMotion } from "./scroll-motion";
 import {
@@ -94,6 +95,18 @@ export default function Home() {
             <p className="max-w-[18ch] text-[clamp(1.85rem,3.75vw,4.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] max-[56rem]:max-w-none max-[56rem]:text-[clamp(1.75rem,7vw,2.75rem)] max-[56rem]:break-words">Frontend developer building clear interfaces for complicated products.</p>
           </div>
           <div className="col-start-9 col-end-13 flex min-w-0 flex-col justify-end gap-8 border-l border-[var(--rule)] p-[clamp(2rem,6vw,5rem)_0_0_clamp(1rem,2vw,2rem)] max-[56rem]:col-start-2 max-[56rem]:col-end-7 max-[56rem]:border-l-0 max-[56rem]:p-[2rem_0_0_0.75rem]">
+            <figure className="relative w-[clamp(6.5rem,9vw,9rem)]" data-motion="body">
+              <span className="absolute inset-0 translate-x-2 translate-y-2 bg-[var(--accent)]" aria-hidden="true" />
+              <Image
+                className="relative aspect-[29/36] h-auto w-full border border-[var(--foreground)] object-cover"
+                src="/images/avatar.jpeg"
+                width={928}
+                height={1152}
+                sizes="(max-width: 896px) 104px, 144px"
+                alt="Portrait of Thaw Zin"
+                preload
+              />
+            </figure>
             <p className="max-w-[33rem] text-[clamp(1rem,1.35vw,1.35rem)] leading-[1.45] text-[var(--muted)]">I turn product ideas into fast, dependable web apps—mostly with React, Next.js, and TypeScript.</p>
             <a className="group inline-flex w-max items-center gap-[0.65rem] border-b border-[var(--foreground)] pb-[0.35rem] font-bold transition-[color,transform] duration-150 hover:translate-x-0.5 hover:-translate-y-0.5 hover:text-[var(--accent)]" href="#work">See selected work <Arrow direction="down" className="group-hover:translate-x-0.5" /></a>
           </div>
