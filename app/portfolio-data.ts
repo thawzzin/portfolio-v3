@@ -55,7 +55,7 @@ export const projects: readonly Project[] = [
     slug: "jack-in-sg",
     title: "Jack in SG",
     type: "Recruitment product",
-    role: "Frontend Developer",
+    role: "Full-stack Developer",
     description:
       "A job platform covering role discovery, application flows, and the administrative work behind keeping listings and candidates moving.",
     stack: ["React", "TypeScript", "Tailwind CSS", "API Integration"],
@@ -65,7 +65,7 @@ export const projects: readonly Project[] = [
     slug: "school",
     title: "School Management System",
     type: "Operations dashboard",
-    role: "Frontend Developer",
+    role: "Full-stack Developer",
     description:
       "A dashboard-led system that brings school workflows, student records, scheduling, and day-to-day administration into one clear workspace.",
     stack: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS", "Zustand"],
@@ -75,7 +75,7 @@ export const projects: readonly Project[] = [
 export const experiences: readonly Experience[] = [
   {
     company: "Hysan Education",
-    role: "Frontend Developer",
+    role: "Full-stack Developer",
     period: "Jan — Nov 2025",
   },
   {
@@ -85,7 +85,7 @@ export const experiences: readonly Experience[] = [
   },
   {
     company: "Hexcode Technologies",
-    role: "Frontend Developer, Internship",
+    role: "Full-stack Developer, Internship",
     period: "Mar — Apr 2023",
   },
 ] as const;
@@ -115,15 +115,15 @@ export const testimonials: readonly Testimonial[] = [
 ] as const;
 
 export const capabilities = [
-  "Frontend development",
+  "Full-stack development",
   "UI implementation",
   "Responsive web design",
   "Design systems",
   "Dashboard interfaces",
-  "API integration",
+  "API design and integration",
   "Authentication flows",
   "Performance optimization",
-  "Full-stack collaboration",
+  "Database-backed products",
 ] as const;
 
 export const stackGroups = [

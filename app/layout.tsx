@@ -16,21 +16,21 @@ const sans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Thaw Zin — Frontend Developer",
+  title: "Thaw Zin — Full-stack Developer",
   description:
-    "Frontend developer based in Thailand building clear, dependable digital products with React, Next.js, and TypeScript.",
+    "Full-stack developer based in Thailand building clear, dependable digital products from interface to data layer.",
   openGraph: {
-    title: "Thaw Zin — Frontend Developer",
+    title: "Thaw Zin — Full-stack Developer",
     description:
-      "Selected product work, experience, and capabilities from frontend developer Thaw Zin.",
+      "Selected product work, experience, and capabilities from full-stack developer Thaw Zin.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thaw Zin — Frontend Developer",
+    title: "Thaw Zin — Full-stack Developer",
     description:
-      "Frontend developer building clear interfaces for complicated products.",
+      "Full-stack developer building dependable products from interface to data layer.",
   },
 };
 

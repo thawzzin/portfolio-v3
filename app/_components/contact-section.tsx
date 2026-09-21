@@ -20,7 +20,7 @@ export function ContactSection() {
         <Arrow className="shrink-0 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" />
       </a>
       <div className="mt-[clamp(2rem,4vw,4rem)] grid grid-cols-[2fr_1fr] gap-8 max-[56rem]:grid-cols-1" data-motion="body">
-        <p className="max-w-[33rem] text-[#bcb9b0]">Tell me what you’re building, where it gets complicated, and what needs to ship.</p>
+        <p className="max-w-[33rem] text-[#bcb9b0]">Tell me what you’re building, how the pieces need to connect, and what needs to ship.</p>
         <div className="flex justify-end gap-6 max-[56rem]:justify-start">
           {socialLinks.map((link) => (
             <a className="group inline-flex items-center gap-[0.4rem] border-b border-current pb-1 font-mono text-[0.72rem] uppercase hover:text-[#7b9bff]" key={link.label} href={link.href} target="_blank" rel="noreferrer">

@@ -36,7 +36,7 @@ export function WorkSection() {
       <div className="mb-[clamp(3rem,7vw,7rem)] grid grid-cols-12 items-end max-[56rem]:grid-cols-1 max-[56rem]:gap-6" data-motion-group>
         <SectionLabel className="col-start-1 col-end-3 max-[56rem]:col-start-1 max-[56rem]:col-end-2" index="01—04">Curated project index</SectionLabel>
         <h2 className={`${sectionTitleClass} col-start-3 col-end-10 min-w-0 max-[56rem]:col-start-1 max-[56rem]:col-end-2`} id="work-title" data-motion="heading">Selected work</h2>
-        <p className="col-start-10 col-end-13 min-w-0 max-w-96 text-base text-[var(--muted)] max-[56rem]:col-start-1 max-[56rem]:col-end-2" data-motion="body">Products built for real workflows, not just polished screens.</p>
+        <p className="col-start-10 col-end-13 min-w-0 max-w-96 text-base text-[var(--muted)] max-[56rem]:col-start-1 max-[56rem]:col-end-2" data-motion="body">Products built across the stack for real workflows, not just polished screens.</p>
       </div>
       <div className="flex flex-col gap-[clamp(5rem,12vw,12rem)]">
         {projects.map((project, index) => <ProjectShowcase key={project.slug} project={project} reverse={index % 2 === 1} />)}

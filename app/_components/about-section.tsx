@@ -8,8 +8,8 @@ export function AboutSection() {
       <div className="grid grid-cols-12 max-[56rem]:grid-cols-1" data-motion-group>
         <h2 className="col-start-1 col-end-9 min-w-0 max-w-[18ch] text-[clamp(2.4rem,5.5vw,6.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] max-[56rem]:col-start-1 max-[56rem]:col-end-2" id="about-title" data-motion="heading">I make complicated products feel straightforward.</h2>
         <div className="col-start-9 col-end-13 flex min-w-0 flex-col gap-6 border-l border-[var(--rule)] pl-[clamp(1rem,3vw,3rem)] text-[clamp(1rem,1.35vw,1.3rem)] text-[var(--muted)] max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:mt-8 max-[56rem]:gap-4 max-[56rem]:border-t max-[56rem]:border-l-0 max-[56rem]:p-[1.5rem_0_0]" data-motion="body">
-          <p>I’m a frontend developer with a computer science background and a practical eye for how products should work.</p>
-          <p>I pay attention to the parts people notice—hierarchy, spacing, feedback, and responsiveness—and the technical choices that keep those parts fast and reliable. Give me a messy workflow and I’ll help turn it into a clear interface.</p>
+          <p>I’m a full-stack developer with a computer science background and a practical eye for how complete products should work.</p>
+          <p>I work across interfaces, APIs, data models, and deployment—connecting the parts people use with the systems that keep them fast and reliable. Give me a messy workflow and I’ll help turn it into a clear, dependable product.</p>
         </div>
       </div>
       <div className="mt-[var(--section-gap)] grid grid-cols-[2fr_1fr] gap-[clamp(2rem,8vw,8rem)] max-[56rem]:grid-cols-1" data-motion-group>
