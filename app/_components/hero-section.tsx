@@ -4,7 +4,7 @@ import { Arrow, contentWidthClass } from "./portfolio-primitives";
 export function HeroSection() {
   return (
     <section className={`${contentWidthClass} hero grid min-h-[calc(100svh-var(--header-height))] scroll-mt-[calc(var(--header-height)+1rem)] grid-cols-12 border-b border-[var(--foreground)] px-[var(--page-gutter)] pt-[clamp(1.5rem,4vw,4rem)] pb-[clamp(2rem,5vw,4rem)] max-[56rem]:min-h-0 max-[56rem]:grid-cols-[2.4rem_repeat(5,minmax(0,1fr))] max-[56rem]:overflow-hidden max-[56rem]:pt-4`} id="top" aria-labelledby="hero-title">
-      <div className="col-start-1 col-end-2 row-start-1 row-end-4 flex min-w-0 rotate-180 flex-col items-start justify-between bg-[var(--accent)] px-3 py-4 font-mono text-[0.65rem] tracking-[0.06em] text-[var(--inverse)] uppercase [writing-mode:vertical-rl] max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:row-start-1 max-[56rem]:row-end-5 max-[56rem]:px-[0.55rem] max-[34rem]:[&>span:last-child]:hidden">
+      <div className="col-start-1 col-end-2 row-start-1 row-end-4 flex min-w-0 rotate-180 flex-col items-start justify-between bg-[var(--accent)] px-3 py-4 font-mono text-[0.65rem] tracking-[0.06em] text-[var(--on-accent)] uppercase [writing-mode:vertical-rl] max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:row-start-1 max-[56rem]:row-end-5 max-[56rem]:px-[0.55rem] max-[34rem]:[&>span:last-child]:hidden">
         <span>Full-stack developer</span>
         <span>Based in Thailand</span>
       </div>

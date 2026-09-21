@@ -9,7 +9,7 @@ function ProjectShowcase({ project, reverse }: { project: Project; reverse: bool
 
   return (
     <article className="grid min-w-0 grid-cols-12 grid-rows-[auto_1fr] max-[56rem]:grid-cols-[2.4rem_1fr] max-[56rem]:grid-rows-[auto_auto]" data-motion-project data-motion-reverse={reverse ? "true" : undefined}>
-      <div className={`row-start-1 row-end-3 flex min-w-0 flex-col justify-between border border-[var(--foreground)] bg-[var(--accent)] p-3 font-mono text-[var(--inverse)] uppercase max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:row-start-1 max-[56rem]:row-end-3 ${indexPosition}`} data-motion="project-index" aria-label={`Project ${project.number}`}>
+      <div className={`row-start-1 row-end-3 flex min-w-0 flex-col justify-between border border-[var(--foreground)] bg-[var(--accent)] p-3 font-mono text-[var(--on-accent)] uppercase max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:row-start-1 max-[56rem]:row-end-3 ${indexPosition}`} data-motion="project-index" aria-label={`Project ${project.number}`}>
         <span className="text-[clamp(1.6rem,3vw,3.5rem)] leading-none max-[56rem]:text-[1.15rem]">{project.number}</span>
         <p className="rotate-180 text-[0.6rem] tracking-[0.06em] [writing-mode:vertical-rl]">Selected work</p>
       </div>

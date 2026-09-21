@@ -26,7 +26,7 @@ function OrderFlowVisual() {
           <div><i /> <span>Pomelo soda</span><b>฿90</b></div>
         </div>
       </div>
-      <div className="flex flex-col bg-[var(--accent)] p-[clamp(1rem,2vw,2rem)] text-[var(--inverse)] max-[34rem]:p-3">
+      <div className="flex flex-col bg-[var(--accent)] p-[clamp(1rem,2vw,2rem)] text-[var(--on-accent)] max-[34rem]:p-3">
         <span className={desktopKickerClass}>Live order</span>
         <strong className="mt-auto font-display text-[clamp(2rem,5.8vw,6rem)] leading-[0.85]">#A-184</strong>
         <div className="my-4 h-[5px] bg-white/35"><span className="block h-full w-[68%] bg-[var(--inverse)]" /></div>
@@ -56,10 +56,10 @@ function UniFindVisual() {
 
 function DesktopItemCard({ label, name, detail, accent = false }: { label: string; name: string; detail: string; accent?: boolean }) {
   return (
-    <div className={`flex aspect-[0.9] flex-col border border-[var(--foreground)] p-[clamp(0.55rem,1.25vw,1rem)] max-[34rem]:p-[0.4rem] ${accent ? "bg-[var(--accent)] text-[var(--inverse)]" : "bg-[var(--background)]"}`}>
+    <div className={`flex aspect-[0.9] flex-col border border-[var(--foreground)] p-[clamp(0.55rem,1.25vw,1rem)] max-[34rem]:p-[0.4rem] ${accent ? "bg-[var(--accent)] text-[var(--on-accent)]" : "bg-[var(--background)]"}`}>
       <span className="font-mono text-[clamp(0.35rem,0.55vw,0.55rem)]">{label}</span>
       <strong className="mt-auto text-[clamp(0.6rem,1.2vw,1.15rem)]">{name}</strong>
-      <small className={`mt-[0.35rem] font-mono text-[clamp(0.35rem,0.55vw,0.55rem)] ${accent ? "text-[var(--inverse)]" : "text-[var(--muted)]"}`}>{detail}</small>
+      <small className={`mt-[0.35rem] font-mono text-[clamp(0.35rem,0.55vw,0.55rem)] ${accent ? "text-[var(--on-accent)]" : "text-[var(--muted)]"}`}>{detail}</small>
     </div>
   );
 }
@@ -78,7 +78,7 @@ function JackVisual() {
         <DesktopJob index="02" role="UI Developer" detail="Platform · Remote" />
         <DesktopJob index="03" role="Software Engineer" detail="Commerce · On-site" />
       </div>
-      <div className="flex flex-col items-center justify-between bg-[var(--accent)] p-[clamp(0.6rem,1.4vw,1.4rem)] text-[var(--inverse)]">
+      <div className="flex flex-col items-center justify-between bg-[var(--accent)] p-[clamp(0.6rem,1.4vw,1.4rem)] text-[var(--on-accent)]">
         <span className="font-mono text-[clamp(0.35rem,0.55vw,0.55rem)] [writing-mode:vertical-rl]">ACTIVE ROLES</span>
         <strong className="font-display text-[clamp(1.2rem,3vw,3rem)] [writing-mode:vertical-rl]">128</strong>
       </div>
@@ -101,7 +101,7 @@ function SchoolVisual() {
     <div className={`${desktopVisualClass} p-[clamp(1rem,2.3vw,2.25rem)] max-[34rem]:p-3`}>
       <div className="flex items-start justify-between">
         <div><span className={desktopKickerClass}>Monday, 08:30</span><strong className={desktopTitleClass}>Good morning, Admin.</strong></div>
-        <b className="bg-[var(--accent)] p-[0.45rem] font-display text-[clamp(0.55rem,1vw,0.9rem)] text-[var(--inverse)]">HS</b>
+        <b className="bg-[var(--accent)] p-[0.45rem] font-display text-[clamp(0.55rem,1vw,0.9rem)] text-[var(--on-accent)]">HS</b>
       </div>
       <div className="mt-[clamp(1rem,2.5vw,2.5rem)] grid grid-cols-3 gap-[clamp(0.45rem,1vw,0.9rem)]">
         <DesktopMetric label="STUDENTS" value="1,248" detail="+18 this term" />
@@ -153,7 +153,7 @@ function OrderFlowMobile() {
       <strong>Popular tonight</strong>
       <MobileFoodCard name="Smoked basil" detail="Spicy · ฿180" />
       <MobileFoodCard name="Crispy tofu" detail="Plant-based · ฿160" />
-      <div className="mt-1 flex justify-between bg-[var(--accent)] p-[0.45rem] text-[var(--inverse)]"><span>3 items</span><b>View order · ฿430</b></div>
+      <div className="mt-1 flex justify-between bg-[var(--accent)] p-[0.45rem] text-[var(--on-accent)]"><span>3 items</span><b>View order · ฿430</b></div>
     </div>
   );
 }
@@ -174,7 +174,7 @@ function UniFindMobile() {
       <div className={mobileBrandClass}>UF<span>●</span></div>
       <strong>What did you lose?</strong>
       <div className="my-[0.7rem] flex justify-between border border-[var(--foreground)] p-[0.45rem] text-[var(--muted)]">Search campus <b>⌕</b></div>
-      <div className="flex flex-1 flex-col bg-[var(--accent)] p-2 text-[var(--inverse)]">
+      <div className="flex flex-1 flex-col bg-[var(--accent)] p-2 text-[var(--on-accent)]">
         <span className="font-mono text-[0.7em]">FOUND · TODAY</span><i className="m-auto aspect-square w-[34%] border border-[var(--inverse)]" /><b className="text-[1.25em]">Student ID</b><small className="opacity-80">Central library</small>
       </div>
       <div className="flex justify-between pt-[0.45rem] font-mono uppercase">Possible match <b>92%</b></div>
@@ -208,7 +208,7 @@ function SchoolMobile() {
     <div className={`${mobileAppClass} [&>strong]:mt-3`}>
       <div className={mobileBrandClass}>Monday<span>HS</span></div>
       <strong>Good morning, Admin.</strong>
-      <div className="mt-[0.65rem] mb-auto flex flex-col bg-[var(--accent)] p-[0.65rem] text-[var(--inverse)]"><span>Attendance today</span><b className="my-[0.35rem] text-[clamp(1rem,2.4vw,2rem)] leading-none">94.8%</b><small className="opacity-80">1,183 students present</small></div>
+      <div className="mt-[0.65rem] mb-auto flex flex-col bg-[var(--accent)] p-[0.65rem] text-[var(--on-accent)]"><span>Attendance today</span><b className="my-[0.35rem] text-[clamp(1rem,2.4vw,2rem)] leading-none">94.8%</b><small className="opacity-80">1,183 students present</small></div>
       <span className={mobileEyebrowClass}>Classes now</span>
       <MobileClass name="Year 8 / A" />
       <MobileClass name="Year 10 / C" />
