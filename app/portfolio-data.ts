@@ -32,13 +32,13 @@ export const projects: readonly Project[] = [
     type: "Restaurant platform",
     role: "Co-founder & Full-Stack Developer",
     description:
-      "A QR ordering system that takes customers from menu to live order tracking, with restaurant tools for menus, fulfilment, and performance.",
+      "A restaurant technology platform that brings digital ordering, POS operations, real-time order management, and intelligent agentic tools into one seamless system—helping restaurants simplify daily operations and deliver a better customer experience.",
     stack: [
-      "React",
+      "React.js",
       "TanStack",
       "TypeScript",
-      "AntDesign",
-      "Tailwindcss",
+      "Ant Design",
+      "Tailwind CSS",
       "Hono",
       "PostgreSQL",
     ],
@@ -53,10 +53,10 @@ export const projects: readonly Project[] = [
     description:
       "The customer side of OrderFlow: scan a table QR code, browse the menu, place an order, and follow its status from the same mobile flow.",
     stack: [
-      "Nextjs",
+      "Next.js",
       "TypeScript",
-      "AntDesign",
-      "Tailwindcss",
+      "Ant Design",
+      "Tailwind CSS",
       "Hono",
       "PostgreSQL",
     ],
@@ -94,11 +94,11 @@ export const projects: readonly Project[] = [
   {
     number: "04",
     slug: "landing",
-    title: "Company Landing page",
+    title: "Blue Ocean Corporate Website",
     type: "Landing page",
     role: "Frontend Developer",
     description:
-      "A company website that introduces the business, highlights its services, and makes it easy for potential clients to get in touch.",
+      "A modern corporate website designed to strengthen the company’s digital presence, clearly communicate its services, and deliver a fast, responsive experience across devices.",
     stack: [
       "React.js",
       "TypeScript",
@@ -112,7 +112,7 @@ export const projects: readonly Project[] = [
 
 export const experiences: readonly Experience[] = [
   {
-    company: "Orderflow",
+    company: "OrderFlow",
     role: "Co-founder & Full-Stack Developer",
     period: "Dec 2025 — present",
   },
@@ -171,7 +171,7 @@ export const stackGroups = [
   {
     label: "Frontend",
     items: [
-      "React",
+      "React.js",
       "Next.js",
       "TypeScript",
       "JavaScript",
@@ -188,7 +188,7 @@ export const stackGroups = [
       "Express",
       "Nestjs",
       "PostgreSQL",
-      "MySql",
+      "MySQL",
       "MongoDB",
       "Prisma",
     ],
