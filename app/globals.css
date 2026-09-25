@@ -76,7 +76,7 @@ a:focus-visible {
   :root { --header-height: 5.9rem; }
 }
 
-@media (min-width: 56.001rem) {
+@media (min-width: 1034px) {
   .hero {
     min-height: calc(100svh - var(--header-height));
     grid-template-rows: auto minmax(0, 1fr) auto;

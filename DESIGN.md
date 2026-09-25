@@ -78,7 +78,7 @@ Archivo Black is reserved for the name, project titles, and the contact climax. 
 
 ## Layout
 
-Desktop layouts use a twelve-column grid inside a `112rem` maximum canvas. The cobalt working edge occupies a narrow factual column rather than floating as decoration. The opening hero fits its complete name, portrait, introduction, CTA, and capability index inside the available small viewport at desktop widths, while short screens may grow rather than clip content. Projects use a compact two-column gallery with equal card widths, close gutters, and image-first hierarchy; below `46rem`, the gallery becomes one column. Anchor targets reserve space for the sticky header.
+Desktop layouts use a twelve-column grid inside a `112rem` maximum canvas. The cobalt working edge occupies a narrow factual column rather than floating as decoration. The opening hero fits its complete name, portrait, introduction, CTA, and capability index inside the available small viewport at desktop widths, while short screens may grow rather than clip content. Below `1034px`, including the 13-inch iPad Pro at its 1032px portrait width, the hero switches to its compact single-column composition and uses natural content height. The desktop hero applies from `1034px` and fills the available viewport height. Projects use a compact two-column gallery with equal card widths, close gutters, and image-first hierarchy; below `46rem`, the gallery becomes one column. Anchor targets reserve space for the sticky header.
 
 ## Elevation & Depth
 
