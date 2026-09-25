@@ -26,7 +26,7 @@ export function HeroSection() {
         </a>
       </div>
       <div className="hero__tags col-start-2 col-end-13 mt-[clamp(3rem,6vw,6rem)] ml-[clamp(1rem,3vw,3rem)] flex min-w-0 flex-wrap gap-x-6 gap-y-2 self-end border-t border-[var(--foreground)] pt-[0.8rem] font-mono text-[0.68rem] tracking-[0.04em] uppercase max-[56rem]:col-start-2 max-[56rem]:col-end-7 max-[56rem]:mt-12 max-[56rem]:ml-3 max-[34rem]:grid max-[34rem]:grid-cols-2 [&>span]:before:text-[var(--accent)] [&>span]:before:content-['×_']">
-        <span>Admin tools</span><span>Job platforms</span><span>SaaS products</span><span>Full-stack builds</span>
+        <span>Admin tools</span><span>SaaS products</span><span>Full-stack builds</span>
       </div>
     </section>
   );

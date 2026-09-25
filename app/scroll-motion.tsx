@@ -20,7 +20,7 @@ export function ScrollMotion() {
     };
 
     const revealTargets = document.querySelectorAll(
-      "[data-motion-group] > [data-motion], [data-motion-project] > [data-motion], [data-motion-project] [data-motion='meta-row'], [data-motion-project] [data-motion-device], [data-motion-row]",
+      "[data-motion-group] > [data-motion], [data-motion-project] > [data-motion], [data-motion-project] [data-motion='project-index'], [data-motion-project] [data-motion='meta-row'], [data-motion-project] [data-motion-device], [data-motion-row]",
     );
     play(revealTargets, { opacity: 0 }, { duration: 0 });
 
@@ -45,7 +45,6 @@ export function ScrollMotion() {
       inView(
         "[data-motion-project]",
         (project) => {
-          const reverse = project.hasAttribute("data-motion-reverse");
           const index = project.querySelector("[data-motion='project-index']");
           const media = project.querySelector("[data-motion='project-media']");
           const copy = project.querySelector("[data-motion='project-copy']");
@@ -76,7 +75,7 @@ export function ScrollMotion() {
           if (copy) {
             play(
               copy,
-              { opacity: [0, 1], x: [reverse ? -42 : 42, 0] },
+              { opacity: [0, 1], y: [32, 0] },
               { duration: 0.82, delay: 0.16, ease: easeOut },
             );
           }

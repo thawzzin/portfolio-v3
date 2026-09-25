@@ -9,6 +9,7 @@
   --rule: #111111;
   --accent: #2447e5;
   --accent-hover: #1838c5;
+  --orderflow-accent: #f5810c;
   --on-accent: #ffffff;
   --inverse: #ffffff;
   --inverse-muted: #d8d7d2;
@@ -67,8 +68,8 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-@keyframes phone-lift {
-  to { transform: translateZ(1.15rem) translateY(-0.2rem); }
+@keyframes phone-float {
+  to { transform: translateY(-0.35rem); }
 }
 
 @media (max-width: 56rem) {

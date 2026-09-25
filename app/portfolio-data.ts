@@ -1,11 +1,15 @@
 export type Project = {
   number: string;
-  slug: "orderflow" | "unifind" | "jack-in-sg" | "school";
+  slug: string;
   title: string;
   type: string;
   role: string;
   description: string;
   stack: readonly string[];
+  visual: {
+    kind: "desktop" | "mobile";
+    src: string;
+  };
 };
 
 export type Experience = {
@@ -27,55 +31,95 @@ export const projects: readonly Project[] = [
     slug: "orderflow",
     title: "OrderFlow",
     type: "Restaurant platform",
-    role: "Full-stack Developer",
+    role: "Co-founder & Full-Stack Developer",
     description:
       "A QR ordering system that takes customers from menu to live order tracking, with restaurant tools for menus, fulfilment, and performance.",
-    stack: ["React", "TanStack", "TypeScript", "PostgreSQL"],
+    stack: [
+      "React",
+      "TanStack",
+      "TypeScript",
+      "AntDesign",
+      "Tailwindcss",
+      "Hono",
+      "PostgreSQL",
+    ],
+    visual: { kind: "desktop", src: "/images/projects/odf.png" },
   },
   {
     number: "02",
-    slug: "unifind",
-    title: "UniFind",
-    type: "University platform",
-    role: "Full-stack Developer",
+    slug: "orderflow-client",
+    title: "OrderFlow Client",
+    type: "Restaurant platform",
+    role: "Co-founder & Full-Stack Developer",
     description:
-      "A campus lost-and-found product for reporting items, searching listings, and managing claims without turning a simple task into paperwork.",
+      "A QR ordering system that takes customers from menu to live order tracking, with restaurant tools for menus, fulfilment, and performance.",
     stack: [
-      "Next.js",
+      "Nextjs",
+      "TypeScript",
+      "AntDesign",
+      "Tailwindcss",
+      "Hono",
+      "PostgreSQL",
+    ],
+    visual: { kind: "mobile", src: "/images/projects/odf-mobile.png" },
+  },
+  // {
+  //   number: "02",
+  //   slug: "unifind",
+  //   title: "UniFind",
+  //   type: "University platform",
+  //   role: "Full-stack Developer",
+  //   description:
+  //     "A campus lost-and-found product for reporting items, searching listings, and managing claims without turning a simple task into paperwork.",
+  //   stack: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "shadcn/ui",
+  //     "TanStack Query",
+  //     "Node.js",
+  //     "PostgreSQL",
+  //   ],
+  // },
+  {
+    number: "03",
+    slug: "hysan",
+    title: "Hysan LMS",
+    type: "Operations dashboard",
+    role: "Frontend Developer",
+    description:
+      "A dashboard-led system that brings school workflows, student records, scheduling, and day-to-day administration into one clear workspace.",
+    stack: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS", "Zustand"],
+    visual: { kind: "desktop", src: "/images/projects/hysan.png" },
+  },
+  {
+    number: "04",
+    slug: "landing",
+    title: "Company Landing page",
+    type: "Landing page",
+    role: "Frontend Developer",
+    description:
+      "A company website that introduces the business, highlights its services, and makes it easy for potential clients to get in touch.",
+    stack: [
+      "React.js",
       "TypeScript",
       "Tailwind CSS",
       "shadcn/ui",
       "TanStack Query",
-      "Node.js",
-      "PostgreSQL",
     ],
-  },
-  {
-    number: "03",
-    slug: "jack-in-sg",
-    title: "Jack in SG",
-    type: "Recruitment product",
-    role: "Full-stack Developer",
-    description:
-      "A job platform covering role discovery, application flows, and the administrative work behind keeping listings and candidates moving.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "API Integration"],
-  },
-  {
-    number: "04",
-    slug: "school",
-    title: "School Management System",
-    type: "Operations dashboard",
-    role: "Full-stack Developer",
-    description:
-      "A dashboard-led system that brings school workflows, student records, scheduling, and day-to-day administration into one clear workspace.",
-    stack: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS", "Zustand"],
+    visual: { kind: "desktop", src: "/images/projects/landing.png" },
   },
 ] as const;
 
 export const experiences: readonly Experience[] = [
   {
+    company: "Orderflow",
+    role: "Co-founder & Full-Stack Developer",
+    period: "Dec 2025 — present",
+  },
+  {
     company: "Hysan Education",
-    role: "Full-stack Developer",
+    role: "Frontend Developer",
     period: "Jan — Nov 2025",
   },
   {
@@ -85,7 +129,7 @@ export const experiences: readonly Experience[] = [
   },
   {
     company: "Hexcode Technologies",
-    role: "Full-stack Developer, Internship",
+    role: "Frontend Developer, Internship",
     period: "Mar — Apr 2023",
   },
 ] as const;
@@ -116,14 +160,15 @@ export const testimonials: readonly Testimonial[] = [
 
 export const capabilities = [
   "Full-stack development",
+  "Frontend Architecture",
   "UI implementation",
   "Responsive web design",
-  "Design systems",
   "Dashboard interfaces",
   "API design and integration",
   "Authentication flows",
   "Performance optimization",
   "Database-backed products",
+  "Cloud deployment & infrastructure",
 ] as const;
 
 export const stackGroups = [
