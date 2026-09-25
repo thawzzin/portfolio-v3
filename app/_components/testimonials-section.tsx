@@ -23,7 +23,7 @@ export function TestimonialsSection() {
     <section className={`${contentWidthClass} ${sectionPaddingClass} border-t border-[var(--foreground)]`} id="testimonials" aria-labelledby="testimonials-title">
       <div className="mb-[clamp(3rem,7vw,7rem)] grid grid-cols-12 items-end max-[56rem]:grid-cols-1 max-[56rem]:gap-6" data-motion-group>
         <SectionLabel className="col-start-1 col-end-3 max-[56rem]:col-start-1 max-[56rem]:col-end-2" index="T">From the team</SectionLabel>
-        <h2 className={`${sectionTitleClass} col-start-3 col-end-11 min-w-0 max-[56rem]:col-start-1 max-[56rem]:col-end-2`} id="testimonials-title" data-motion="heading">What collaborators say.</h2>
+        <h2 className={`${sectionTitleClass} col-start-3 col-end-11 min-w-0 max-[56rem]:col-start-1 max-[56rem]:col-end-2 max-[56rem]:!text-[clamp(1.7rem,8vw,3.75rem)] max-[56rem]:!leading-[0.96] max-[56rem]:!tracking-[-0.045em] max-[56rem]:[text-wrap:balance]`} id="testimonials-title" data-motion="heading">What collaborators say.</h2>
       </div>
       <div className="border-t border-[var(--foreground)]" role="region" aria-roledescription="carousel" aria-label="Testimonials" onKeyDown={handleKeyDown} tabIndex={0}>
         <div className="flex items-center justify-between gap-4 border-b border-[var(--rule)] py-3 font-mono text-[0.65rem] tracking-[0.05em] text-[var(--muted)] uppercase">

@@ -19,10 +19,10 @@ export function SiteHeader() {
           </a>
         ))}
       </nav>
-      <a className="relative flex items-center justify-self-end gap-2 text-xs font-[650] tracking-[0.07em] uppercase max-[56rem]:col-start-2 max-[56rem]:row-start-1 max-[34rem]:text-[0.65rem] max-[34rem]:after:text-[0.65rem] max-[34rem]:after:content-['Available']" href="#contact">
+      <a className="relative flex items-center justify-self-end gap-2 text-xs font-[650] tracking-[0.07em] uppercase max-[56rem]:hidden" href="#contact">
         <span className="h-[0.55rem] w-[0.55rem] rounded-[2px] border border-[var(--foreground)] bg-[var(--accent)] forced-colors:bg-[Highlight]" aria-hidden="true" />
-        <span className="max-[34rem]:sr-only">Available for work</span>
-        <Arrow direction="down" className="max-[56rem]:hidden" />
+        <span>Available for work</span>
+        <Arrow direction="down" />
       </a>
     </header>
   );
