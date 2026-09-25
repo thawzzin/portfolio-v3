@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 grid min-h-[var(--header-height)] grid-cols-[1fr_auto_1fr] items-center border-b border-[var(--foreground)] bg-[color-mix(in_srgb,var(--background)_94%,transparent)] px-[var(--page-gutter)] backdrop-blur-[12px] max-[56rem]:grid-cols-[1fr_auto] max-[56rem]:grid-rows-[3rem_2.8rem]">
       <a className="w-max font-display text-base tracking-[-0.04em]" href="#top" aria-label="Thaw Zin, back to top">
-        TZ<span className="font-mono text-[0.65em] tracking-normal text-[var(--accent)]">/26</span>
+        Z<span className="font-mono text-[0.65em] tracking-normal text-[var(--accent)]">/26</span>
       </a>
       <nav className="flex gap-[clamp(1.25rem,3vw,3rem)] max-[56rem]:col-start-1 max-[56rem]:col-end-3 max-[56rem]:row-start-2 max-[56rem]:items-center max-[56rem]:justify-between max-[56rem]:self-stretch max-[56rem]:border-t max-[56rem]:border-[var(--rule)]" aria-label="Primary navigation">
         {navigationLinks.map(([label, href]) => (

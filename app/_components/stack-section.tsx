@@ -5,7 +5,7 @@ export function StackSection() {
   return (
     <section className={`${contentWidthClass} ${sectionPaddingClass} border-t border-[var(--foreground)]`} aria-labelledby="stack-title">
       <div className="mb-[clamp(3rem,6vw,6rem)] grid grid-cols-[1fr_3fr] items-start gap-[clamp(2rem,5vw,5rem)] max-[56rem]:grid-cols-1 max-[56rem]:gap-5" data-motion-group>
-        <SectionLabel index="S">Working toolkit</SectionLabel>
+        <SectionLabel index="T">Working toolkit</SectionLabel>
         <h2 className="min-w-0 max-w-[18ch] text-[clamp(2.5rem,5vw,5.75rem)] font-semibold leading-[0.98] tracking-[-0.055em]" id="stack-title" data-motion="heading">Technology, organized by use.</h2>
       </div>
       <div className="border-t border-[var(--foreground)]">

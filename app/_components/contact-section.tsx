@@ -9,8 +9,8 @@ export function ContactSection() {
   return (
     <section className={`${contentWidthClass} scroll-mt-[calc(var(--header-height)+1rem)] bg-[var(--foreground)] px-[var(--page-gutter)] pt-[clamp(2rem,4vw,4rem)] pb-[clamp(3rem,7vw,7rem)] text-[var(--inverse)]`} id="contact" aria-labelledby="contact-title" data-motion-group>
       <div className="flex justify-between gap-4 border-b border-[var(--inverse-rule)] pb-4 font-mono text-[0.65rem] tracking-[0.05em] uppercase max-[34rem]:grid max-[34rem]:grid-cols-1" data-motion="meta">
-        <span className="before:mr-[0.6rem] before:inline-block before:h-[0.55rem] before:w-[0.55rem] before:rounded-[2px] before:border before:border-[var(--inverse)] before:bg-[var(--accent)] before:content-[''] forced-colors:before:bg-[Highlight]">Available for freelance</span>
-        <span>Selected full-time roles</span>
+        <span className="before:mr-[0.6rem] before:inline-block before:h-[0.55rem] before:w-[0.55rem] before:rounded-[2px] before:border before:border-[var(--inverse)] before:bg-[var(--accent)] before:content-[''] forced-colors:before:bg-[Highlight]">Open to new opportunities</span>
+        <span>Full-time / Part-time / Contract</span>
         <span>Thailand / Myanmar</span>
       </div>
       <p className="mt-[clamp(4rem,8vw,8rem)] font-mono text-[0.68rem] tracking-[0.06em] uppercase" data-motion="kicker">Have a project?</p>

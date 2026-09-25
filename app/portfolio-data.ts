@@ -22,7 +22,6 @@ export type Testimonial = {
   quote: string;
   name: string;
   designation: string;
-  src: string;
 };
 
 export const projects: readonly Project[] = [
@@ -52,7 +51,7 @@ export const projects: readonly Project[] = [
     type: "Restaurant platform",
     role: "Co-founder & Full-Stack Developer",
     description:
-      "A QR ordering system that takes customers from menu to live order tracking, with restaurant tools for menus, fulfilment, and performance.",
+      "The customer side of OrderFlow: scan a table QR code, browse the menu, place an order, and follow its status from the same mobile flow.",
     stack: [
       "Nextjs",
       "TypeScript",
@@ -140,35 +139,32 @@ export const testimonials: readonly Testimonial[] = [
       "I had the pleasure of working with Thaw Zin at Blue Planet Co., Ltd on several IT projects. As a Frontend Developer, he consistently impressed me with his creativity, strategic thinking, and ability to lead cross-functional teams. He brought energy to every project and was always ready to support his teammates. I highly recommend Thaw Zin to any team looking for a dedicated and innovative professional.",
     name: "Eaint Thayaphy Oo",
     designation: "Project Coordinator",
-    src: "/images/avatar3.png",
   },
   {
     quote:
       "Working with Thaw Zin has been a great experience, as he brings a high level of commitment to everything he does. He's incredibly reliable when it comes to frontend development, consistently delivering quality work on time. As a team player, he’s always ready to lend a hand and collaborate to solve problems. His attention to detail and ability to adapt quickly make him a valuable asset to any project. I believe Thaw Zin's strong work ethic and positive attitude contribute significantly to the success of our team.",
     name: "Ent Bhone Myint Mo",
     designation: "Senior Software Engineer",
-    src: "/images/avatar2.png",
   },
   {
     quote:
       "I had the pleasure of working closely with Thaw Zin for nearly a year, and during that time, I was consistently impressed by his exceptional frontend development skills. His ability to turn complex ideas into intuitive designs is remarkable. His contributions always added significant value, and I often found myself learning new techniques and best practices from him. Thaw Zin's dedication to his work, combined with his technical expertise and teamwork, makes him an asset to any team. I highly recommend him for any role that requires a skilled and reliable frontend developer.",
     name: "Shine Htet Naing",
     designation: "Frontend Developer",
-    src: "/images/avatar1.png",
   },
 ] as const;
 
 export const capabilities = [
-  "Full-stack development",
-  "Frontend Architecture",
+  "Frontend architecture",
   "UI implementation",
-  "Responsive web design",
+  "Responsive interfaces",
+  "Design systems",
   "Dashboard interfaces",
-  "API design and integration",
-  "Authentication flows",
-  "Performance optimization",
-  "Database-backed products",
-  "Cloud deployment & infrastructure",
+  "State management",
+  "API integration",
+  "Accessibility",
+  "Frontend performance",
+  "Testing and maintainability",
 ] as const;
 
 export const stackGroups = [

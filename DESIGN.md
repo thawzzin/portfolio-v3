@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: "Thaw Zin Portfolio"
-description: "An editorial brutalist portfolio built around a cobalt working edge and product-focused project stories."
+description: "An editorial brutalist frontend developer portfolio built around a cobalt working edge and product-focused project stories."
 colors:
   background: "#F2F1ED"
   surface: "#FFFEFA"
@@ -58,7 +58,7 @@ The portfolio should feel like a carefully typeset product field guide: a Swiss 
 
 ### Product context and register
 
-- **Audience and primary job:** Recruiters, clients, and collaborators need to understand Thaw Zin's full-stack role, product experience, technical range, and availability quickly.
+- **Audience and primary job:** Recruiters, clients, and collaborators need to understand Thaw Zin's frontend specialization, product experience, technical range, and availability quickly.
 - **Target market and evidence:** International English-speaking web roles; the portfolio content and supplied brief are English-first.
 - **Locale and language policy:** English only for this release.
 - **Usage scene:** Quick review on laptop or mobile, followed by deeper project scanning on larger screens.
