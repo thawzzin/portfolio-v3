@@ -62,24 +62,6 @@ export const projects: readonly Project[] = [
     ],
     visual: { kind: "mobile", src: "/images/projects/odf-mobile.png" },
   },
-  // {
-  //   number: "02",
-  //   slug: "unifind",
-  //   title: "UniFind",
-  //   type: "University platform",
-  //   role: "Full-stack Developer",
-  //   description:
-  //     "A campus lost-and-found product for reporting items, searching listings, and managing claims without turning a simple task into paperwork.",
-  //   stack: [
-  //     "Next.js",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "shadcn/ui",
-  //     "TanStack Query",
-  //     "Node.js",
-  //     "PostgreSQL",
-  //   ],
-  // },
   {
     number: "03",
     slug: "hysan",
@@ -93,20 +75,22 @@ export const projects: readonly Project[] = [
   },
   {
     number: "04",
-    slug: "landing",
-    title: "Blue Ocean Corporate Website",
-    type: "Landing page",
-    role: "Frontend Developer",
+    slug: "unifind",
+    title: "UniFind",
+    type: "University platform",
+    role: "Full-stack Developer",
     description:
-      "A modern corporate website designed to strengthen the company’s digital presence, clearly communicate its services, and deliver a fast, responsive experience across devices.",
+      "A campus lost-and-found product for reporting items, searching listings, and managing claims without turning a simple task into paperwork.",
     stack: [
-      "React.js",
+      "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "shadcn/ui",
       "TanStack Query",
+      "Node.js",
+      "PostgreSQL",
     ],
-    visual: { kind: "desktop", src: "/images/projects/landing.png" },
+    visual: { kind: "desktop", src: "/images/projects/unifind.png" },
   },
 ] as const;
 
